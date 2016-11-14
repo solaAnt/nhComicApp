@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/copyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/confirmBtn"
+        android:layout_alignBottom="@+id/confirmBtn"
+        android:layout_toRightOf="@+id/confirmBtn"
+        android:text="粘贴" />
+
+    <TextView
+        android:id="@+id/logTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="72dp"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/funcBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/logTxt"
+        android:layout_alignParentTop="true"
+        android:text="其他功能" />
+
+    <EditText
+        android:id="@+id/urlEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/confirmBtn"
+        android:layout_alignLeft="@+id/logTxt"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/confirmBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/urlEdit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:text="添加" />
+
+    <ProgressBar
+        android:id="@+id/downloadPbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/urlEdit"
+        android:layout_alignLeft="@+id/urlEdit"
+        android:layout_alignRight="@+id/urlEdit" />
+
+    <TextView
+        android:id="@+id/comicNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/downloadPbar"
+        android:layout_alignLeft="@+id/downloadPbar"
+        android:layout_marginBottom="24dp"
+        android:text="漫画名" />
+
+    <TextView
+        android:id="@+id/progressTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/downloadPbar"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/downloadPbar"
+        android:text="进度" />
+
+    <TextView
+        android:id="@+id/previewTimeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/copyBtn"
+        android:layout_alignBottom="@+id/copyBtn"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/copyBtn"
+        android:gravity="center"
+        android:text="当前任务预计剩余:" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/file_items"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dip"
+    android:paddingLeft="12dip"
+    android:paddingRight="12dip" >
+
+    <ImageView
+        android:id="@+id/fileicon"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/file_items"
+        android:textSize="50dip"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/filetext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/fileicon"
+        android:paddingLeft="20dip" />
+
+    <CheckBox
+        android:id="@+id/file_check"
+        style="?android:attr/starStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/file_items"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        tools:ignore="NotSibling" />
+
+</RelativeLayout>
